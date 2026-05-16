@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>🌾 Smart Farmlink</h2>
+    <a href="/dashboard">🏠 Dashboard</a>
+    <a href="/predict_page">🌱 Prediction</a>
+    <a href="/forecast_page">📊 Forecast</a>
+    <a href="/market">🛒 Marketplace</a>
+    <a href="/logout">🚪 Logout</a>
+</div>
+
+<div class="main">
+
+<div class="hero">
+    <h1 style="font-size:45px;">AI Smart Agriculture</h1>
+    <p>Predict • Analyze • Grow Smarter</p>
+</div>
+
+<div class="grid">
+
+<div class="card">
+    <h2>🌱</h2>
+    <h3>Crop Prediction</h3>
+    <p>AI-based crop recommendation</p>
+    <a href="/predict_page"><button>Launch</button></a>
+</div>
+
+<div class="card">
+    <h2>📊</h2>
+    <h3>Forecast</h3>
+    <p>Demand & price analytics</p>
+    <a href="/forecast_page"><button>View</button></a>
+</div>
+
+<div class="card">
+    <h2>🛒</h2>
+    <h3>Marketplace</h3>
+    <p>Buy & sell crops</p>
+    <a href="/market"><button>Explore</button></a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

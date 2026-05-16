@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #1f4037, #0f2027);
+    color: white;
+    display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    height: 100vh;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    position: fixed;
+    padding-top: 20px;
+    box-shadow: 5px 0 20px rgba(0,0,0,0.3);
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    margin: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateX(5px);
+}
+
+/* MAIN */
+.main {
+    margin-left: 240px;
+    padding: 40px;
+    width: 100%;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+    backdrop-filter: blur(25px);
+    padding: 60px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* GRID */
+.grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* MARKET */
+.market-card {
+    width: 260px;
+}
+
+/* BUTTON */
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #00c853, #64dd17);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+/* INPUT */
+input, select {
+    padding: 12px;
+    width: 70%;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity:0; transform: translateY(20px);}
+    to {opacity:1; transform: translateY(0);}
+}
+.result-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+/* your existing styles */
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {opacity:0; transform: translateY(20px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+/* ========================= */
+/* NEW: SECTION TITLE STYLE */
+/* ========================= */
+
+.section-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    background: linear-gradient(45deg, #00ffcc, #66ff99);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    display: inline-block;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 3px;
+    margin-top: 5px;
+    background: linear-gradient(45deg, #00ffcc, #66ff99);
+    border-radius: 5px;
+}
+
+/* OPTIONAL HOVER EFFECT */
+.card:hover .section-title {
+    text-shadow: 0 0 10px rgba(0,255,204,0.7);
+}
+/* forecast grid */
+.forecast-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* forecast item bar */
+.bar {
+    height: 8px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #00ffcc, #64ffda);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* highlight box */
+.highlight-box {
+    background: rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+/* AUTH PAGES (login/register/home) */
+
+.auth-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: radial-gradient(circle at top, #1f4037, #0f2027);
+}
+
+/* container */
+.auth-card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* title */
+.auth-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* input */
+.auth-card input,
+.auth-card select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+/* button */
+.auth-card button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* links */
+.auth-link {
+    margin-top: 15px;
+    display: block;
+    color: #00ffcc;
+    text-decoration: none;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>🌾 Agri AI</h2>
+    <a href="/dashboard">🏠 Dashboard</a>
+    <a href="/predict_page">🌱 Prediction</a>
+    <a href="/forecast_page">📊 Forecast</a>
+    <a href="/market">🛒 Marketplace</a>
+    <a href="/logout">🚪 Logout</a>
+</div>
+
+<div class="main">
+
+<div class="card">
+
+<h2>🌱 Crop Recommendation</h2>
+
+<form action="/predict" method="POST">
+
+<select name="soil_type">
+<option>clay</option>
+<option>loamy</option>
+<option>sandy</option>
+<option>black</option>
+<option>alluvial</option>
+</select><br>
+
+<select name="season">
+<option>kharif</option>
+<option>rabi</option>
+<option>zaid</option>
+</select><br>
+
+<input name="city" placeholder="Enter District"><br>
+
+<button onclick="this.innerText='Predicting...'"> Predict</button>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>

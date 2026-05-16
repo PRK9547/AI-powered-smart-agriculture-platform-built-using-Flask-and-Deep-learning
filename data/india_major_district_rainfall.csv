@@ -1,0 +1,105 @@
+district,state,avg_monthly_rainfall_mm
+Chennai,Tamil Nadu,100.3
+Coimbatore,Tamil Nadu,76.95
+Madurai,Tamil Nadu,86.45
+Thanjavur,Tamil Nadu,84.48
+Salem,Tamil Nadu,103.99
+Tirunelveli,Tamil Nadu,101.71
+Erode,Tamil Nadu,109.9
+Vellore,Tamil Nadu,79.3
+Kochi,Kerala,290.63
+Thiruvananthapuram,Kerala,243.58
+Kozhikode,Kerala,266.24
+Thrissur,Kerala,300.64
+Alappuzha,Kerala,243.18
+Kannur,Kerala,263.86
+Bangalore,Karnataka,127.19
+Mysore,Karnataka,122.16
+Mangalore,Karnataka,106.58
+Belgaum,Karnataka,124.28
+Hubli,Karnataka,134.85
+Davangere,Karnataka,96.31
+Vijayawada,Andhra Pradesh,123.46
+Visakhapatnam,Andhra Pradesh,118.72
+Guntur,Andhra Pradesh,102.97
+Kurnool,Andhra Pradesh,94.84
+Nellore,Andhra Pradesh,130.12
+Rajahmundry,Andhra Pradesh,102.81
+Mumbai,Maharashtra,150.68
+Pune,Maharashtra,150.96
+Nagpur,Maharashtra,205.02
+Nashik,Maharashtra,187.47
+Aurangabad,Maharashtra,202.11
+Kolhapur,Maharashtra,196.54
+Solapur,Maharashtra,182.61
+Ahmedabad,Gujarat,95.14
+Surat,Gujarat,76.11
+Vadodara,Gujarat,81.67
+Rajkot,Gujarat,90.54
+Bhavnagar,Gujarat,83.79
+Jamnagar,Gujarat,91.57
+Jaipur,Rajasthan,41.24
+Udaipur,Rajasthan,43.27
+Jodhpur,Rajasthan,32.73
+Kota,Rajasthan,35.65
+Ajmer,Rajasthan,36.63
+Bikaner,Rajasthan,33.28
+Ludhiana,Punjab,62.52
+Amritsar,Punjab,58.83
+Patiala,Punjab,63.78
+Jalandhar,Punjab,73.8
+Bathinda,Punjab,66.22
+Gurgaon,Haryana,56.88
+Faridabad,Haryana,53.03
+Hisar,Haryana,54.41
+Rohtak,Haryana,70.48
+Panipat,Haryana,63.55
+Lucknow,Uttar Pradesh,88.71
+Kanpur,Uttar Pradesh,73.82
+Varanasi,Uttar Pradesh,92.79
+Agra,Uttar Pradesh,73.56
+Meerut,Uttar Pradesh,80.9
+Allahabad,Uttar Pradesh,101.64
+Bareilly,Uttar Pradesh,89.76
+Bhopal,Madhya Pradesh,102.28
+Indore,Madhya Pradesh,107.38
+Gwalior,Madhya Pradesh,113.71
+Jabalpur,Madhya Pradesh,111.04
+Ujjain,Madhya Pradesh,89.16
+Sagar,Madhya Pradesh,81.28
+Kolkata,West Bengal,185.24
+Howrah,West Bengal,181.42
+Darjeeling,West Bengal,176.88
+Asansol,West Bengal,235.43
+Malda,West Bengal,230.11
+Siliguri,West Bengal,185.17
+Patna,Bihar,148.7
+Gaya,Bihar,134.16
+Bhagalpur,Bihar,163.21
+Muzaffarpur,Bihar,137.7
+Darbhanga,Bihar,126.83
+Bhubaneswar,Odisha,143.78
+Cuttack,Odisha,163.93
+Rourkela,Odisha,144.82
+Sambalpur,Odisha,165.41
+Puri,Odisha,185.46
+Guwahati,Assam,239.94
+Dibrugarh,Assam,221.93
+Silchar,Assam,299.75
+Jorhat,Assam,250.95
+Tezpur,Assam,209.09
+Ranchi,Jharkhand,106.45
+Jamshedpur,Jharkhand,109.7
+Dhanbad,Jharkhand,136.63
+Bokaro,Jharkhand,145.19
+Hazaribagh,Jharkhand,125.95
+Raipur,Chhattisgarh,123.81
+Bilaspur,Chhattisgarh,142.9
+Durg,Chhattisgarh,179.77
+Korba,Chhattisgarh,151.75
+Jagdalpur,Chhattisgarh,178.26
+Hyderabad,Telangana,114.43
+Warangal,Telangana,80.46
+Nizamabad,Telangana,108.83
+Karimnagar,Telangana,107.27
+Khammam,Telangana,101.48

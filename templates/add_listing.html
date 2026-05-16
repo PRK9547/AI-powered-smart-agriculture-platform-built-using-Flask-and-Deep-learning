@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="auth-body">
+
+<div class="auth-card">
+
+<h2>➕ Add Crop Listing</h2>
+
+<form method="POST">
+
+    <input name="crop" placeholder="Crop Name">
+
+    <input name="quantity" placeholder="Quantity">
+
+    <!-- Quantity Unit -->
+    <select name="quantity_unit">
+        <option value="kg">kg</option>
+        <option value="quintal">quintal</option>
+    </select>
+
+    <input name="price" placeholder="Price">
+
+    <!-- Price Unit -->
+    <select name="price_unit">
+        <option value="kg">per kg</option>
+        <option value="quintal">per quintal</option>
+    </select>
+
+    <input name="contact" placeholder="WhatsApp Number">
+
+    <button>Add Listing</button>
+
+</form>
+
+<br>
+
+<a href="/market">⬅ Back</a>
+
+</div>
+
+</body>
+</html>

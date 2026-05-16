@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <h2>🌾 Agri AI</h2>
+    <a href="/dashboard">🏠 Dashboard</a>
+    <a href="/predict_page">🌱 Prediction</a>
+    <a href="/forecast_page">📊 Forecast</a>
+    <a href="/market">🛒 Marketplace</a>
+    <a href="/logout">🚪 Logout</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<h1>AI Prediction Dashboard</h1>
+
+<div class="result-grid">
+
+    <!-- WEATHER -->
+    <div class="card">
+        <h3 class="section-title">🌦 Weather</h3>
+        <p><b>Temperature:</b> {{ temperature }} °C</p>
+        <p><b>Humidity:</b> {{ humidity }} %</p>
+        <p><b>Rainfall:</b> {{ rainfall }} mm</p>
+    </div>
+
+    <!-- SEASON -->
+    <div class="card">
+        <h3 class="section-title">🌱 Season</h3>
+        <p>{{ season }}</p>
+    </div>
+
+    <!-- BIG RESULT -->
+    <div class="card full-width" style="text-align:center;">
+
+        <h2 class="section-title">🌾 Recommended Crop</h2>
+
+        <h1 style="
+            font-size:60px;
+            color:#00ffcc;
+            margin:10px 0;
+        ">
+            {{ crop }}
+        </h1>
+
+        <p>Optimized using AI + weather + soil data</p>
+
+    </div>
+
+    <!-- DEMAND FORECAST -->
+    <div class="card">
+        <h3 class="section-title">📈 Demand Forecast</h3>
+        <p><b>Trend:</b> {{ demand_trend }}</p>
+
+        <hr>
+
+        {% for m, v in demand_forecast %}
+            <p>{{ m }} → {{ v }} Tons</p>
+        {% endfor %}
+    </div>
+
+    <!-- PRICE FORECAST -->
+    <div class="card">
+        <h3 class="section-title">💰 Price Forecast</h3>
+        <p><b>Trend:</b> {{ price_trend }}</p>
+
+        <hr>
+
+        {% for m, v in price_forecast %}
+            <p>{{ m }} → ₹ {{ v }}</p>
+        {% endfor %}
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>

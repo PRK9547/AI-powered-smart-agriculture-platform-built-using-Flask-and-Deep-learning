@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forecast</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>🌾 Agri AI</h2>
+    <a href="/dashboard">🏠 Dashboard</a>
+    <a href="/predict_page">🌱 Prediction</a>
+    <a href="/forecast_page">📊 Forecast</a>
+    <a href="/market">🛒 Marketplace</a>
+    <a href="/logout">🚪 Logout</a>
+</div>
+
+<div class="main">
+
+<h1>📊 Forecast Dashboard</h1>
+
+<!-- INPUT -->
+<div class="card">
+    <form method="POST" action="/forecast_page">
+        <input name="crop" placeholder="Enter crop name" required>
+        <br><br>
+        <button type="submit" onclick="this.innerText='Loading...'">
+            Get Forecast
+        </button>
+    </form>
+</div>
+
+<!-- RESULT -->
+{% if demand_forecast %}
+
+<div class="forecast-grid">
+
+    <!-- DEMAND -->
+    <div class="card">
+        <h3 class="section-title">📈 Demand Analysis</h3>
+
+        <div class="highlight-box">
+            <b>Trend:</b> {{ demand_trend }}
+        </div>
+
+        {% for m,v in demand_forecast %}
+            <p>{{ m }} → {{ v }} Tons</p>
+            <div class="bar" style="width: {{ (v/20)|round(2) }}%;"></div>
+        {% endfor %}
+    </div>
+
+    <!-- PRICE -->
+    <div class="card">
+        <h3 class="section-title">💰 Price Analysis</h3>
+
+        <div class="highlight-box">
+            <b>Trend:</b> {{ price_trend }}
+        </div>
+
+        {% for m,v in price_forecast %}
+            <p>{{ m }} → ₹ {{ v }}</p>
+            <div class="bar" style="width: {{ (v/50)|round(2) }}%;"></div>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>

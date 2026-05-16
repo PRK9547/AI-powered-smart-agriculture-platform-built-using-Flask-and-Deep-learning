@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="sidebar">
+    <h2>🌾 Agri AI</h2>
+    <a href="/dashboard">🏠 Dashboard</a>
+    <a href="/predict_page">🌱 Prediction</a>
+    <a href="/forecast_page">📊 Forecast</a>
+    <a href="/market">🛒 Marketplace</a>
+    <a href="/logout">🚪 Logout</a>
+</div>
+
+<div class="main">
+
+<h2>🛒 Marketplace</h2>
+
+<!-- ✅ SHOW ADD BUTTON ONLY FOR FARMER -->
+{% if session.get("role") == "farmer" %}
+<a href="/add_listing">
+<button>➕ Add Listing</button>
+</a>
+<br><br>
+{% endif %}
+
+<div class="grid">
+
+{% for item in listings %}
+<div class="card market-card">
+
+<img src="https://source.unsplash.com/300x200/?{{ item.crop }},farm"
+     style="width:100%; border-radius:10px;">
+
+<h3>{{ item.crop }}</h3>
+<p>
+Qty: {{ item.quantity }}
+{% if item.quantity_unit %}
+    {{ item.quantity_unit }}
+{% else %}
+    kg
+{% endif %}
+</p>
+<p>
+Price: ₹ {{ item.price }}
+{% if item.price_unit %}
+    / {{ item.price_unit }}
+{% else %}
+    / kg
+{% endif %}
+</p>
+<p>Farmer: Praveen Kumar </p>
+
+<a href="https://wa.me/919342219547" target="_blank">
+    <button>Contact</button>
+</a>
+
+<br>
+
+<!-- ✅ SHOW ONLY TO OWNER -->
+{% if session.get("user") == item.farmer %}
+
+<a href="/edit_listing/{{ item.id }}">
+<button>✏️ Edit</button>
+</a>
+
+<a href="/delete_listing/{{ item.id }}">
+<button style="background:red;">🗑 Delete</button>
+</a>
+
+{% endif %}
+
+</div>
+{% endfor %}
+
+</div>
+
+</div>
+
+</body>
+</html>

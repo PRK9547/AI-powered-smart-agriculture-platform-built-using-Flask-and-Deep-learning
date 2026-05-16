@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="auth-body">
+
+<div class="auth-card">
+
+<h2>✏️ Edit Listing</h2>
+
+<form method="POST">
+
+<input name="crop" value="{{ item.crop }}">
+<input name="quantity" value="{{ item.quantity }}">
+<input name="price" value="{{ item.price }}">
+
+<button>Update Listing</button>
+
+</form>
+
+<br>
+
+<a href="/market">⬅ Back</a>
+
+</div>
+
+</body>
+</html>

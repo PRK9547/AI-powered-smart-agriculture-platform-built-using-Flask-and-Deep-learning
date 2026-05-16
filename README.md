@@ -1,8 +1,8 @@
-# AI-powered-smart-agriculture-platform-built-using-Flask
+# AI-powered-smart-agriculture-platform-built-using-Flask and Deep learning
 It is an AI-powered agriculture platform built with Flask. It provides crop prediction, weather-based recommendations, demand forecasting, and a farmer marketplace with WhatsApp contact integration to help farmers make smarter farming and selling decisions.
 
 # Project Structure
-smart-farmlink/
+AI-powered-smart-agriculture-platform-built-using-Flask and Deep learning/
 │
 ├── app.py
 ├── requirements.txt
